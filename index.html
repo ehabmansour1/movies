@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <script
+      src="https://kit.fontawesome.com/3162f5d9b2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Title</title>
+  </head>
+  <body>
+    <div class="loader">
+      <div class="lds-ripple">
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <nav class="navbar">
+      <a href="/" class="logo">
+        <i class="fa-solid fa-video logo-text"></i>
+        <span class="logo-text">POP CIMA</span>
+      </a>
+    </nav>
+
+    <div class="search-container">
+      <select class="category-select" id="categorySelect">
+        <option value="all">All</option>
+        <option value="movie">Movies</option>
+        <option value="person">People</option>
+        <option value="tv">TV Shows</option>
+      </select>
+      <input
+        type="text"
+        class="search-bar"
+        placeholder="Search movies by title or year..."
+      />
+    </div>
+    <div class="boxes" id="movieList"></div>
+
+    <div class="modal-overlay" id="modalOverlay" w-tid="22"></div>
+    <script src="javascript/main.js"></script>
+  </body>
+</html>
